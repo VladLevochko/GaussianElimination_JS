@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#inputBlock {
+    width: 100%;
+    height: auto;
+    min-height: 310px;
+    overflow: auto;
+    background: #dadada;
+}
+
+    #controlBlock {
+        float: left;
+        width: 300px;
+        background: #cbcbcb;
+    }
+
+        #info {
+            width: 100%;
+            height: 130px;
+            padding: 10px 0 0 20px;
+            text-align: left;
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+            color: #3b3b3b;
+            text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        #matrixSizeSelect {
+            display: block;
+            float: left;
+            width: 100%;
+            height: 50px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            background: #fff;
+        }
+
+        .controlButton {
+            display: block;
+            float: left;
+            width: 150px;
+            height: 60px;
+            background: #208ddd;
+            border: none;
+            outline: none;
+            margin: 0 auto;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .controlButton:hover {
+            background: #1c7abf;
+        }
+
+        .controlButton:active {
+            background: #186aa6;
+        }
+
+
+    #matrix {
+        height: auto;
+        float: left;
+    }
+
+    #matrixA, #vectorB {
+        float: left;
+        border-left: 1px solid #757575;
+        border-right: 1px solid #757575;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    #equal {
+        float: left;
+        padding-top: 80px;
+    }
+
+    .matrixCell, .matrixCellB {
+        width: 50px;
+        height: 30px;
+        margin: 5px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+
+#steps {
+    width: 600px;
+    margin: 0 auto;
+}
+
+    .errorMessage {
+        font-size: 40px;
+    }
+
+    .tableDiv {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .stepTable {
+        border-left: 2px solid #333;
+        border-right: 2px solid #333;
+        border-radius: 5px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .stepTable td {
+        width: 65px;
+        height: 40px;
+        font-size: 18px;
+        font-family: "Droid Sans", serif;
+        outline: none;
+        border: none;
+    }
+
+    .stepTable td:last-child {
+        border-left: 1px solid #333;
+    }
+
+    .tableDiv:last-child td:last-child {
+        background: #bde9ff;
+    }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaussian Elimination</title>
+    <link href="style.css" rel = stylesheet>
+</head>
+<body>
+
+    <div id = "inputBlock">
+        <div id = "controlBlock">
+            <div id="info">
+                Gaussian<br> elimination<br> calculator
+            </div>
+            <select id = "matrixSizeSelect" onchange = "resizeMatrix()">
+                <option value = "3">3x3</option>
+                <option value = "4">4x4</option>
+                <option value = "5">5x5</option>
+                <option value = "6">6x6</option>
+                <option value = "7">7x7</option>
+                <option value = "8">8x8</option>
+                <option value = "9">9x9</option>
+                <option value = "10">10x10</option>
+            </select>
+            <input type = button value = "Reset:)" onclick="resetMatrix()" class="controlButton">
+            <input type = button value = "Calculate" onclick="calculate()" class="controlButton">
+        </div>
+
+        <div id = "matrix"></div>
+
+    </div>
+
+    <div id = "answerBlock">
+        <div id = "steps"></div>
+    </div>
+
+
+    <script src="GE.js"></script>
+</body>
+</html>
